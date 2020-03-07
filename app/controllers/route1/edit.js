@@ -28,9 +28,8 @@ export default Controller.extend({
         },
 
         erase(){
-            this.set('name',"");
-            this.set('mail',"");
-            this.set('ph_number',"");
+            this.transitionToRoute('route2');
+
         }
     }
 });
