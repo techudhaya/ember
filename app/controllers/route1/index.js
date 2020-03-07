@@ -3,6 +3,7 @@ import Controller from '@ember/controller';
 export default Controller.extend({
     actions:{
         add(){
+
             console.log("record added to the database");
             let newtask=this.store.createRecord('testart',{
             
@@ -17,11 +18,13 @@ export default Controller.extend({
             this.set('mail',"");
             this.set('ph_number',"");
 
+            alert("contact saved");
+
         },
 
         find(){
             let v=this.model.findBy("name",this.search);
-            console.log(v.mail)
+            alert(v.name+"\n"+v.mail)
         },
 
         erase(){

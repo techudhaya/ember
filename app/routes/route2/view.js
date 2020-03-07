@@ -9,5 +9,6 @@ export default Route.extend({
         return this.store.findRecord('testart', params.id).then(function(p) {
             return p;
           });
-    }
+    },
+    
 });

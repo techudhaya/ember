@@ -3,19 +3,23 @@ import EmberObject, { computed } from '@ember/object';
 
 
 export default Controller.extend({
-   
-    // model:computed('model',function(){
-    //     return this.model.findby("name",);
-    // })
-
+ 
     actions:{
         delete(){
 
-            this.store.findRecord('testart', this.model.get('id'), { backgroundReload: true }).then(function(contact) {
-                contact.destroyRecord(); // => DELETE to /posts/2
-            });
+            let decision=confirm('Do you want to delete');
 
+            if(decision){
+
+                this.store.findRecord('testart', this.model.get('id'), { backgroundReload: true }).then(function(contact) {
+                    contact.destroyRecord(); 
+                });
             // this.document.querySelector(".profile").style.color="red";
+
+                this.transitionToRoute('route2');
+
+            }
+          
 
         }
 

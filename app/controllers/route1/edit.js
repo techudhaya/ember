@@ -17,7 +17,13 @@ export default Controller.extend({
             // this.set('mail',"");
             // this.set('ph_number',"");
 
-            this.model.save();
+            let decision = confirm('do you want to save the changes');
+            if(decision){
+                this.model.save();
+                this.transitionToRoute('route2');
+
+            }
+            
 
         },
 
