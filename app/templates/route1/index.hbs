@@ -1,0 +1,62 @@
+
+
+{{!-- add block --}}
+
+<div class="add" >
+
+   <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">Username</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">name</div>
+        </div>
+        <Input type="text" @value={{name}} class="form-control" placeholder="name"></Input>
+      </div>
+    </div>
+
+
+   <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">mail</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">mail</div>
+        </div>
+        <Input type="text" @value={{mail}} class="form-control" placeholder="mail"></Input>
+      </div>
+    </div>
+
+
+   <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">phone number</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">phone number</div>
+        </div>
+        <Input type="text" @value={{ph_number}} class="form-control" placeholder="phone number"></Input>
+      </div>
+    </div>
+
+
+    <button {{action "add"}} class="btn btn-success">SAVE</button>
+
+    <button {{action "erase"}} class="btn btn-danger">CANCEL</button>
+
+
+</div>
+
+
+ {{!-- find block --}}
+
+<div class="find">
+
+    <Input type="text" @value={{search}}></Input>
+    <button {{action "find"}} class="btn btn-outline-info">find record</button>
+
+</div>
+
+
+{{!-- diplay block --}}
+
+
+
+{{outlet}}

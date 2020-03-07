@@ -3,6 +3,15 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'app13',
+    firebase : {
+      apiKey: "AIzaSyC9cHly3irt6Kp-P2uE-RDnXd1_H9NOEEA",
+      authDomain: "test1-6953a.firebaseapp.com",
+      databaseURL: "https://test1-6953a.firebaseio.com",
+      projectId: "test1-6953a",
+      storageBucket: "test1-6953a.appspot.com",
+      messagingSenderId: "46468392992",
+      appId: "1:46468392992:web:1c43b0487b4eb926543445"
+    },
     environment,
     rootURL: '/',
     locationType: 'auto',

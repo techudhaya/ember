@@ -1,5 +1,25 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+
+
+
+<ul class="nav nav-tabs bg-dark ">
+  <li class="nav-item">
+    <LinkTo @route="index" class="nav-link">FIRE BASE MAIN PAGE</LinkTo>
+  </li>
+  <li class="nav-item">
+    <LinkTo @route="route1" class="nav-link">contact</LinkTo>
+  </li>
+    <li class="nav-item">
+    <LinkTo @route="route2" class="nav-link">List</LinkTo>
+  </li>
+
+ </ul>
+
+<div class="container">
+
+ {{outlet}}
+
+
+</div>
+

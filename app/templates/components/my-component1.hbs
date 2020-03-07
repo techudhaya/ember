@@ -1,0 +1,22 @@
+{{yield}}
+
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Mail</th>
+      <th scope="col">Phone number</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each this.model as |i|}}
+        <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.mail}}</td>
+        <td>{{i.phone_number}}</td>
+        </tr>
+    {{/each}}
+  </tbody>
+</table>
+

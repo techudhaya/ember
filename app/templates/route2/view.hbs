@@ -1,0 +1,29 @@
+{{outlet}}
+
+
+<div class="profile">
+
+<div class="card">
+  <div class="card-header">
+    {{model.name}} [ {{model.id}} ]
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">details</h5>
+    <p class="card-text">{{model.mail}}</p>
+    <p class="card-text">{{model.phone_number}}</p>
+
+    {{!-- <a href="/route1" class="btn btn-primary">edit</a> --}}
+    <LinkTo @route="route1.edit" class="btn btn-primary" @model={{model.id}}>edit </LinkTo>
+    <a href="#" class="btn btn-danger" {{action "delete"}}>delete</a>
+
+  </div>
+</div>
+
+
+
+</div>
+
+{{!-- 
+{{model.name}}
+{{model.mail}}
+{{model.phone_number}} --}}
