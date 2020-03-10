@@ -3,12 +3,26 @@
 
 
 .add{
-    margin: 15% 25% 10% -5%; 
+    margin-top:15% ; 
     display: block;
+    padding: 5%;
+    // border-top: 5px solid rgb(211, 78, 78);
+    // border-right: 5px solid rgb(0, 132, 255);
+    // border-bottom: 5px solid rgb(57, 197, 92);
+    // border-left: 5px solid rgb(233, 245, 74);
+
+    border-left: 5px solid black;
+    border-right: 5px solid grey;
+
+    border-radius: 30px;
+
+    
+
+
 }
 
 .find{
-    margin: 0% 30% 10% 2%; 
+    margin: 10% 30% 10% 2%; 
 }
 
 button{
@@ -16,18 +30,22 @@ button{
 }
 
 .show{
-    margin: 2% 30% 10% 2%; 
+    margin: 2% 30% 10% 5%; 
    
 
 }
 
 .container{
-    margin:5% 20%;
+    margin:5% 10%;
 
 }
 
 .profile{
     margin:5% 10% 0 -10%;
+    position: fixed;
+    top:12%;
+    right: 1%;
+    width:20%;
 }
 
 hr{
@@ -36,7 +54,3 @@ hr{
 
 }
 
-.jumbotron,{
-    margin:5% 10% 0 -20%;
-
-}
