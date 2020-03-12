@@ -28,6 +28,7 @@ export default Controller.extend({
         },
 
         erase(){
+            // this.rollbackAttributes();
             this.transitionToRoute('route2');
 
         }
