@@ -1,0 +1,65 @@
+
+
+{{!-- add block --}}
+
+<div class="add" >
+
+   <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">Username</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">name</div>
+        </div>
+        <Input type="text" @value={{name}} class="form-control" placeholder="name"></Input>
+      </div>
+    </div>
+
+
+   <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">mail</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">mail</div>
+        </div>
+        <Input type="text" @value={{mail}} class="form-control" placeholder="mail"></Input>
+      </div>
+    </div>
+
+
+   <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">phone number</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">phone number</div>
+        </div>
+        <Input type="text" @value={{ph_number}} class="form-control" placeholder="phone number"></Input>
+      </div>
+    </div>
+
+
+    <button {{action "add"}} class="btn btn-success">SAVE</button>
+
+    <button {{action "erase"}} class="btn btn-danger">CANCEL</button>
+
+
+</div>
+
+
+ {{!-- find block --}}
+
+{{!-- <div class="find">
+    <div class="input-group mb-3">
+      <Input type="text" class="form-control" @value={{search}} placeholder="contact name"></Input>
+
+      <div class="input-group-append">
+          <button {{action "find"}} class="btn btn-info m-0 px-3 py-2 z-depth-0 waves-effect " >find record</button>
+      </div>
+    </div>
+</div> --}}
+
+
+{{!-- diplay block --}}
+
+
+
+{{outlet}}
