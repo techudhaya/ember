@@ -2,21 +2,21 @@ import Controller from '@ember/controller';
 
 export default Controller.extend({
     actions:{
-        add(){
+        update(){
 
             console.log("record added to the database");
             let newtask=this.store.createRecord('testart',{
             
-                name:this.get('name'),
-                mail:this.get('mail'),
-                phone_number:this.get('ph_number')
+                name:this.model.name,
+                mail:this.model.mail,
+                phone_number:this.model.phone_number
             });
-            console.log(newtask.id)
+
             newtask.save();
 
-            this.set('name',"");
-            this.set('mail',"");
-            this.set('ph_number',"");
+            this.set("model.name","")
+            this.set("model.mail","")
+            this.set("model.phone_number","")
 
             alert("contact saved");
 
