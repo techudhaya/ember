@@ -15,7 +15,7 @@
   <tbody>
     {{#each this.model as |i|}}
           <tr>
-            <LinkTo @route="route2.view" @model={{i.id}}>
+            <LinkTo @route="list.detail" @model={{i.id}}>
                 <td>{{i.name}}</td>
             </LinkTo> 
             <td>{{i.mail}}</td>

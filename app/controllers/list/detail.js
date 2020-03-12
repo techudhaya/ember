@@ -16,7 +16,7 @@ export default Controller.extend({
                 });
             // this.document.querySelector(".profile").style.color="red";
 
-                this.transitionToRoute('route2');
+                this.transitionToRoute('list');
 
             }
           

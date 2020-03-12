@@ -20,7 +20,7 @@ export default Controller.extend({
             let decision = confirm('do you want to save the changes');
             if(decision){
                 this.model.save();
-                this.transitionToRoute('route2');
+                this.transitionToRoute('list');
 
             }
             
